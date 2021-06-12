@@ -81,17 +81,22 @@ public class StaticBlockDemo {
                 "Volvo"));
     }
 
+
+
     public StaticBlockDemo() {
-        System.out.println("Constructor method");
-        num += 5;
+
+            System.out.println("Constructor method");
+            num += 5;
+        }
+
+    public StaticBlockDemo( int value){
+            System.out.println("Overloaded constructor - value = " + value);
+            num += value;
+        }
+
+
+        //other methods that use the carModels arraylist
+
     }
 
-    public StaticBlockDemo(int value) {
-        System.out.println("Overloaded constructor - value = " + value);
-        num += value;
-    }
 
-
-    //other methods that use the carModels arraylist
-
-}
