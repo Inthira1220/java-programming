@@ -1,8 +1,12 @@
 package day59_polymorphism_exceptions;
 
-public class InputField implements WebElement{
+public class InputField implements WebElement {
+
+    public static final String TAG_NAME = "input"; //This is the naming convention for final (Constant variables)
+
     @Override
     public void sendKeys(String txt) {
+        System.out.println("Typing into input field - "+txt);
 
     }
 
@@ -12,10 +16,14 @@ public class InputField implements WebElement{
     }
 
     @Override
-    public void getText() {
+    public String getText() {
+        System.out.println("getting text of input field");
+        return "java";
 
     }
-    public void getValue(){
-        System.out.println();
+
+    public String getValue() {
+        System.out.println("getting value in the inputField");
+        return "selenium";
     }
 }
