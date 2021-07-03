@@ -1,6 +1,9 @@
 package day59_polymorphism_exceptions;
 
 public class Link implements WebElement{
+
+    public static final String TAG_NAME = "a";
+
     @Override
     public void sendKeys(String txt) {
 
@@ -12,7 +15,8 @@ public class Link implements WebElement{
     }
 
     @Override
-    public void getText() {
+    public String  getText() {
+        return getText();
 
     }
     public void getLinkHref(){
