@@ -11,6 +11,14 @@ public class ElementsTest {
         link.getLinkHref();
 
         WebElement loginLink = new Link();  //this is polymorphism way to call
+        loginLink.click();
+        String txt = loginLink.getText();
+        System.out.println("txt = "+ txt);
+        //loginLink.getLinkHref(); <--error
+
+        WebElement username = new InputField();
+        username.sendKeys("wooden spoon");
+        username.click();
 
 
     }
