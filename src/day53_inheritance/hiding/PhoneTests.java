@@ -11,6 +11,6 @@ public class PhoneTests {
 
         phone.call();
         mobile.text();
-        mobile.call();
+//        mobile.call();
     }
 }

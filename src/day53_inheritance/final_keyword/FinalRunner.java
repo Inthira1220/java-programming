@@ -4,5 +4,7 @@ public class FinalRunner {
     public static void main(String[] args) {
         System.out.println(TestData.ADMIN_USERNAME);
         //TestData.ADMIN_USERNAME = "change"; //ERROR cant change value of final value
+        final int ssn = 123456;
+        System.out.println("ssn = " + ssn);
     }
 }

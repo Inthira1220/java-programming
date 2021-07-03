@@ -7,7 +7,7 @@ public class DriverObjects {
         WebDriver driver3 = new ChromeDriver(); //Poliphonism
 
         driver1.get("https://www.google.com");
-        driver1.findElement("//input");
+        driver1.findElement("//input[@name='q']");
         System.out.println("Title = "+driver1.getTitle());
     }
 }

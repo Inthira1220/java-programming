@@ -35,6 +35,7 @@ class myObject{
         Sub sub = new Sub();
         sub.learn();
         System.out.println("sub.num = " + sub.num);
+        sub.close();
 
     }
 }
