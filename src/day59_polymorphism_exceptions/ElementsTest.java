@@ -10,6 +10,7 @@ public class ElementsTest {
         link.sendKeys("hi");
         link.getLinkHref();
 
+        WebElement loginLink = new Link();  //this is polymorphism way to call
 
 
     }
