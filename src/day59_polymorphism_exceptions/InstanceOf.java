@@ -1,18 +1,20 @@
 package day59_polymorphism_exceptions;
 
-import javafx.scene.shape.Circle;
-import javafx.scene.shape.Shape;
+
+import day57_abstraction_polymorhism.shapes.Circle;
+import day57_abstraction_polymorhism.shapes.Shape;
+import day57_abstraction_polymorhism.shapes.Square;
 
 public class InstanceOf {
     public static void main(String[] args) {
         //instance of operator
-        Shape shape = new Circle();
+        Shape shape = new Square();
         System.out.println(shape instanceof Circle);
-        //System.out.println(shape instanceof Square);
+        System.out.println(shape instanceof Square);
 
         if (shape instanceof Circle) {
             System.out.println("It is a Circle object");
-        //} else if (shape instanceof Square) {
+        } else if (shape instanceof Square) {
             System.out.println("It is a Square object");
         }
 
@@ -24,11 +26,11 @@ public class InstanceOf {
         if (shape.getClass().getSimpleName().equals("Square")) {
             System.out.println("It is a square object");
         }
+
         System.out.println(shape.getClass().getDeclaredMethods().length);
 
-        WebElement el = new Link();
-        System.out.println("object class name of el variable = " + el.getClass().getSimpleName());
+        //WebElement el = new Link();
+        //System.out.println("object class name of el variable = " + el.getClass().getSimpleName());
         //System.out.println(el.getClass().getDeclaredFields());
-
-        }
+    }
 }
