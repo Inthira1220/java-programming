@@ -1,6 +1,7 @@
 package day58_polymorphism;
 
-public class Amazon extends OnlineShop implements Prime{
+public class Amazon extends OnlineShopping implements Prime {
+
     @Override
     public void buy() {
         System.out.println("Buying items on amazon.com");
@@ -9,11 +10,10 @@ public class Amazon extends OnlineShop implements Prime{
     @Override
     public void sell() {
         System.out.println("Selling items on amazon.com");
-
     }
 
     @Override
-    public void primeSipping() {
-        System.out.println("Free-2 days shipping for prime users");
+    public void primeShipping() {
+        System.out.println("Free-2day shipping for prime users");
     }
 }

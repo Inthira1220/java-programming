@@ -2,14 +2,13 @@ package day57_abstraction_polymorhism.abstract_class_vs_interface;
 
 public class Runner {
     public static void main(String[] args) {
-        //AbstractA absA = new AbstractA();             cannot create like this
-        //InterfaceA iA = new InterfaceA();             cannot create like this
-
-
-        InterfaceA.staticMethodE("wooden spoon"); //staticMethodE is called with str - wooden spoon
-        //ConcreteA.staticMethodE("hello"); //staticMethodE only can ve called from interface
+        /**
+         * We cannot create object(instantiate) neither of them.
+         AbstractA absA = new AbstractA();
+         InterfaceA iA = new InterfaceA();
+         */
+        InterfaceA.staticMethodE("wooden spoon");
+        //ConcreteA.staticMethodE("hello"); -> staticMethodE only works with interface.staticMethodE
         ConcreteA.staticMethodC();
-
     }
 }
-

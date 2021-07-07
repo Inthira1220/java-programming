@@ -1,26 +1,28 @@
 package day57_abstraction_polymorhism.abstract_class_vs_interface;
 
 public interface InterfaceA {
-
+    //constants
     public static final String TYPE = "interface";
-    double MAX_COUNT = 500;  //this is also public static final
-
-    public abstract void absMethodD(int num);
-
-
+    double MAX_COUNT = 500; //this is also public static final
 
     /**
-     * Starting from java 8
-     * Interface can have : 1. Abstract methods
-     *                      2. Static methods
-     *                      3. Default methods
-     * @param
+     * ERROR: Interfaces CANNOT have constructors
+     public InterfaceA() {
+     System.out.println("constructor is not welcome in Interface");
+     }
      */
-    public static void staticMethodE(String str){
-        System.out.println("staticMethodE is called with str - "+str);
+    public abstract void absMethodD(int num);
+
+    /**
+     * starting from Java 8 (jdk 1.8)
+     * interface can have static and default methods
+     */
+    public static void staticMethodE(String str) {
+        System.out.println("staticMethodE is called with str - " + str);
     }
 
-    public default void defaultMethodF(){
+    public default void defaultMethodF() {
         System.out.println("defaultMethodF is called");
     }
+
 }
