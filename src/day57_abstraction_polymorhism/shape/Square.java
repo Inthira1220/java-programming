@@ -1,4 +1,6 @@
-package day57_abstraction_polymorhism.shapes;
+package day57_abstraction_polymorhism.shape;
+
+import day57_abstraction_polymorhism.shape.Shape;
 
 public class Square extends Shape {
 

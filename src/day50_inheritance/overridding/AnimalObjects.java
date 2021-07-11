@@ -3,8 +3,8 @@ package day50_inheritance.overridding;
 public class AnimalObjects {
     public static void main(String[] args) {
         Animal animal = new Animal();
-        animal.name = "Grey";
-        animal.type = "Pitbull";
+        animal.name = "Gray";
+        animal.type = "Pitbul";
         animal.speak();
 
         Cat cat = new Cat();
@@ -12,7 +12,5 @@ public class AnimalObjects {
 
         Dog dog = new Dog();
         dog.speak();
-
-
     }
 }

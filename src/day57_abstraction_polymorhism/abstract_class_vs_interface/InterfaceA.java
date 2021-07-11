@@ -24,5 +24,4 @@ public interface InterfaceA {
     public default void defaultMethodF() {
         System.out.println("defaultMethodF is called");
     }
-
 }

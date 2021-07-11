@@ -1,9 +1,9 @@
 package day59_polymorphism_exceptions;
 
 
-import day57_abstraction_polymorhism.shapes.Circle;
-import day57_abstraction_polymorhism.shapes.Shape;
-import day57_abstraction_polymorhism.shapes.Square;
+import day57_abstraction_polymorhism.shape.Circle;
+import day57_abstraction_polymorhism.shape.Shape;
+import day57_abstraction_polymorhism.shape.Square;
 
 public class InstanceOf {
     public static void main(String[] args) {
