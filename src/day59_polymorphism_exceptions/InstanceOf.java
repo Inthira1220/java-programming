@@ -29,8 +29,8 @@ public class InstanceOf {
 
         System.out.println(shape.getClass().getDeclaredMethods().length);
 
-        //WebElement el = new Link();
-        //System.out.println("object class name of el variable = " + el.getClass().getSimpleName());
+        WebElement el = new Link();
+        System.out.println("object class name of el variable = " + el.getClass().getSimpleName());
         //System.out.println(el.getClass().getDeclaredFields());
     }
 }
